@@ -81,6 +81,8 @@ article {
 
 .responsive img {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section {
@@ -89,7 +91,7 @@ section {
     width: 250px;
     margin: 10px;
     text-align: center;
-    line-height: 75px;
+    line-height: 50px;
     font-size: 30px;
 
 }
@@ -113,4 +115,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 64px;
+    }
 }
